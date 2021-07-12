@@ -184,14 +184,15 @@
         <img class="w3-image w3-round-large" src="img/5.png" alt="hand" width="1100">
       </div>
       <div class="w3-col m6 w3-center" style="padding-left: 16px;">
-        <h1 class="courrier">Courrier</h1>
+        <br>
+        <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>
         <h2>Azerty Groupe</h2>
         <h2>3 rue du pont tinel, 76600 Le Havre</h2>
         <br>
-        <h1 class="phone">Téléphone</h1>
+        <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>        
         <h2>07 85 45 99 70</h2>
         <br>
-        <h1 class="mail">Email</h1>
+        <i class="fa fa-at fa-fw w3-xxlarge w3-margin-right"></i>        
         <h2>dispatch@azerty-groupe.fr</h2>
         <p><a href="#contact" class="w3-button w3-round-large w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Nous contacter</a></p>
         <br>
@@ -207,26 +208,45 @@
   </div> 
   
   <!-- Section Contact -->
-  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    </div>
+  <div class="bgimg-3 w3-container" style="padding:128px 16px" id="contact">
+    <div class="container-contact">
+      <h1 class="w3-center"><u>Formulaire de contact</u></h1>
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="name" name="firstname" placeholder="Nom*" required></input>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Prénom*" required></input>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-75">
+              <select id="choice" name="choice" id="dropdown">
+                <option selected>Votre motif*</option>
+                <option value="company">Vous êtes une entreprise</option>
+                <option value="technician">Vous êtes un technicien</option>
+              </select>
+            </div>
+            <br>
+          </div>
+            <div class="row">
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Votre message ici..." style="height:200px"></textarea>
+                </div>
+              </div>
+              <input type="file" id="myFile" name="filename">
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </form>
+    </div> 
   </div>
   
   <!-- Footer -->
