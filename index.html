@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <!-- Section Header -->
     <!-- Navbar (fixe quand on scroll) -->
 <div class="w3-top">
@@ -211,23 +212,30 @@
   <div class="bgimg-3 w3-container" style="padding:128px 16px" id="contact">
     <div class="container-contact">
       <h1 class="w3-center"><u>Formulaire de contact</u></h1>
-        <form action="action_page.php">
+        <br>
+        <form action="action_page.php" method="post">           
           <div class="row">
             <div class="col-75">
-              <input type="text" id="name" name="firstname" placeholder="Nom*" required></input>
+              <input type="text" class="form-control" id="fname" name="firstname" placeholder="Nom*" required></input>
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Prénom*" required></input>
+              <input type="text" class="form-control" id="lname" name="lastname" placeholder="Prénom*" required></input>
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col-75">
-              <select id="choice" name="choice" id="dropdown">
-                <option selected>Votre motif*</option>
+              <input type="text" class="form-control" id="mail" name="mail" type="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="email" required ></input>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-75">
+              <select name="choice" id="choice" required>
+                <option value="">Motif*</option>
                 <option value="company">Vous êtes une entreprise</option>
                 <option value="technician">Vous êtes un technicien</option>
               </select>
@@ -236,12 +244,13 @@
           </div>
             <div class="row">
               <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Votre message ici..." style="height:200px"></textarea>
+                <textarea id="message" name="message" placeholder="Votre message ici..." style="height:200px"></textarea>
                 </div>
               </div>
-              <input type="file" id="myFile" name="filename">
+              <input type="file" id="myFile" name="filename" required>
               <div class="row">
-                <input type="submit" value="Submit">
+                <input class="w3-btn" type="submit" value="Submit">
+                  <div class="loader"></div>
               </div>
             </div>
           </div>
