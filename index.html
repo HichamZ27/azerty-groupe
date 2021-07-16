@@ -8,7 +8,7 @@
     
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,22 +16,22 @@
 
     <!-- Section Header -->
     <!-- Navbar (fixe quand on scroll) -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button" id="logo" alt="Logo Azerty Groupe"></a>
-      <!-- Liens navbar côté droit -->
-      <div class="w3-right w3-hide-small">
-        <a href="#home" class="w3-bar-item w3-button">ACCUEIL</a>
-        <a href="#about" class="w3-bar-item w3-button"> À PROPOS</a>
-        <a href="#prestations" class="w3-bar-item w3-button"> PRESTATIONS</a>
-        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+  <div class="w3-top">
+      <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button" id="logo" alt="Logo Azerty Groupe"></a>
+        <!-- Liens navbar côté droit -->
+        <div class="w3-right w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button">ACCUEIL</a>
+          <a href="#about" class="w3-bar-item w3-button"> À PROPOS</a>
+          <a href="#prestations" class="w3-bar-item w3-button"> PRESTATIONS</a>
+          <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Liens de nav cacher sur petits écrans et remplacer par le menu hamburger -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!-- Liens de nav cacher sur petits écrans et remplacer par le menu hamburger -->
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-</div>
+  </div>
   
   <!-- Sidebar apparaît sur petits écrans quand on clique sur le menu hamburger -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
@@ -213,7 +213,7 @@
     <div class="container-contact">
       <h1 class="w3-center"><u>Formulaire de contact</u></h1>
         <br>
-        <form action="action_page.php" method="post">           
+        <form id="my-form" action="https://formspree.io/f/mknkvvoy" method="POST" enctype="multipart/form-data">           
           <div class="row">
             <div class="col-75">
               <input type="text" class="form-control" id="fname" name="firstname" placeholder="Nom*" required></input>
@@ -235,7 +235,7 @@
           <div class="row">
             <div class="col-75">
               <select name="choice" id="choice" required>
-                <option value="">Motif*</option>
+                <option value="" disabled>Motif*</option>
                 <option value="company">Vous êtes une entreprise</option>
                 <option value="technician">Vous êtes un technicien</option>
               </select>
@@ -247,11 +247,13 @@
                 <textarea id="message" name="message" placeholder="Votre message ici..." style="height:200px"></textarea>
                 </div>
               </div>
-              <input type="file" id="myFile" name="filename" required>
+              <!-- <input type="file" id="myFile" name="upload"> -->
               <div class="row">
-                <input class="w3-btn" type="submit" value="Submit">
-                  <div class="loader"></div>
+                <br>
+                <input class="w3-btn" type="submit" value="Envoyer" >
               </div>
+              <br>
+              <div id="status"></div> 
             </div>
           </div>
         </form>
@@ -271,6 +273,8 @@
     </div> -->
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   </footer>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
