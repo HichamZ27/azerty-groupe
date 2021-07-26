@@ -28,19 +28,15 @@
         </div>
         <!-- Liens de nav cacher sur petits écrans et remplacer par le menu hamburger -->
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-          <div class="hamburger" onclick="myFunction(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            <!-- <i class="fa fa-bars"></i> -->
-          </div>
+            <i class="fa fa-bars"></i>
         </a>
       </div>
   </div>
   
   <!-- Sidebar apparaît sur petits écrans quand on clique sur le menu hamburger -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À PROPOS</a>
     <a href="#prestations" onclick="w3_close()" class="w3-bar-item w3-button">PRESTATIONS</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -94,33 +90,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="w3-container" style="padding:128px 16px" id="about">
-    <div class="w3-row-padding-about w3-center" style="margin-top:64px">
-      <h3 class="w3-center"> À PROPOS DE L'ENTREPRISE</h3>
-      <p class="w3-center w3-large">Éléments clés de notre entreprise</p>
-      <div class="w3-quarter">
-        <i class="fa fa-map-marker w3-margin-bottom w3-jumbo w3-center"></i>
-        <p class="w3-large">Location</p>
-        <p>3 rue du pont tinel</p>
-        <p>76600 Le Havre</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
-        <p class="w3-large">Service</p>
-        <p>Nous proposons un service fluide et continu avec des outils innovants, ainsi  que des interventions à J+1.</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-users w3-margin-bottom w3-jumbo"></i>
-        <p class="w3-large">Technicien</p>
-        <p>Nos techniciens sont des chevronnés de l'informatique, ils sont sélectionnés pour leurs qualités professionnelles et techniques, afin de résoudre vos problèmes.</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-        <p class="w3-large">Support</p>
-        <p>Nous intervenons dans les départements des Hauts-de-France, Le Havre, Rouen, Caen, Paris et dans le départment du 27. </p>
-      </div>
-    </div>
-  </div> -->
 
   <!-- Section Prestations -->
   <div class="w3-container w3-vivid-black" style="padding:50px 16px" id="prestations">
@@ -145,22 +114,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="w3-container w3-black" style="padding:50px 16px 0px 50px" id="prestations">
-    <div class="w3-row-padding">
-      <div class="w3-col m6" id="div-prestations">
-        <h1 class="prestations">Nos prestations</h1>
-        <br>
-        <img src="img/3.png" alt="motherboard" width="1100" id="prestations-img">
-      </div>
-      <div class="w3-col m6">
-        <h1 class="number-one">01</h1><h1 class="maintenance">Maintenance</h1>
-        <hr class="style-two">
-        <h1 class="number-two">02</h1><h1 class="installation">Installation</h1>
-        <hr class="style-three">
-        <h1 class="number-three">03</h1><h1 class="deployment">Déploiement</h1>
-      </div>
-    </div>
-  </div> -->
   
   <!-- Section "Statistiques" -->
   <div class="w3-container w3-row w3-center w3-vivid-black w3-padding-64">

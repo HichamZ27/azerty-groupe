@@ -23,11 +23,6 @@ async function handleSubmit(event) {
 }
 form.addEventListener("submit", handleSubmit);
 
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
 let mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
@@ -38,8 +33,6 @@ function w3_open() {
   }
 }
 
-// Close the sidebar with the close button
 function w3_close() {
   mySidebar.style.display = "none";
 }
-x.classList.toggle("none");
