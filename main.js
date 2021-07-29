@@ -23,16 +23,10 @@ async function handleSubmit(event) {
 }
 form.addEventListener("submit", handleSubmit);
 
-let mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === "block") {
-    mySidebar.style.display = "none";
-  } else {
-    mySidebar.style.display = "block";
-  }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
-function w3_close() {
-  mySidebar.style.display = "none";
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }

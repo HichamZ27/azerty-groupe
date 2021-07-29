@@ -27,20 +27,18 @@
           <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
         </div>
         <!-- Liens de nav cacher sur petits écrans et remplacer par le menu hamburger -->
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="openNav()">&#9776;</a>
       </div>
   </div>
   
   <!-- Sidebar apparaît sur petits écrans quand on clique sur le menu hamburger -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16" >&times;</a>
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">ACCUEIL</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À PROPOS</a>
-    <a href="#prestations" onclick="w3_close()" class="w3-bar-item w3-button">PRESTATIONS</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  </nav>
+  <div class="sidenav" id="mySidenav" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home" onclick="closeNav()" class="w3-bar-item w3-button">ACCUEIL</a>
+    <a href="#about" onclick="closeNav()" class="w3-bar-item w3-button">À PROPOS</a>
+    <a href="#prestations" onclick="closeNav()" class="w3-bar-item w3-button">PRESTATIONS</a>
+    <a href="#contact" onclick="closeNav()" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
   
   <!-- Header avec une image full -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -161,7 +159,7 @@
   <div class="container">
     <iframe
       class="responsive-iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1224.8960708441566!2d0.16746847158036152!3d49.502180156145336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.   1!3m3!1m2!1s0x47e02fdb8b504d0f%3A0x111fb7fb06e9c03c!2s3%20Rue%20du%20Pont%20Tinel%2C%2076600%20Le%20Havre!5e1!3m2!1sfr!2sfr!4v1625753971822!5m2!1sfr!2sfr" 
+      src="https://www.google.com/maps/d/embed?mid=10M8BQZxbJEjim3jPc7cm5pOAfo6p_1D_"      
       style="border:0;" allowfullscreen="" loading="lazy">
     </iframe>
   </div> 
