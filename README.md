@@ -1,4 +1,4 @@
-# azerty-groupe.com
+# azerty-groupe.fr
 
 # Responsive and professional website of Azerty Groupe.
 
