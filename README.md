@@ -1,5 +1,7 @@
-# azerty-groupe.fr
+# Premier site développé pour Azerty Groupe
 
-# Responsive and professional website of Azerty Groupe.
+# First site developed for Azerty Groupe
 
-# 1er projet de site réalisé durant le stage professionnel de la formation développeur web/web mobile 2020/2021 à l'AFPA.
+# Le site est entièrement responsive
+
+# The site is fully reponsive
