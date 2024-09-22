@@ -30,3 +30,25 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+// Youtube vidéo
+document.getElementById("open-popup").addEventListener("click", function () {
+  var popup = document.getElementById("popup-video");
+  var videoSrc = "https://www.youtube.com/embed/oM9NZ4B8d_E"; // Format URL d'intégration correct
+  document.getElementById("youtube-video").src = videoSrc;
+  popup.style.display = "block";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+  var popup = document.getElementById("popup-video");
+  popup.style.display = "none";
+  document.getElementById("youtube-video").src = ""; // Arrête la vidéo
+});
+
+window.onclick = function (event) {
+  var popup = document.getElementById("popup-video");
+  if (event.target === popup) {
+    popup.style.display = "none";
+    document.getElementById("youtube-video").src = ""; // Arrête la vidéo
+  }
+};
